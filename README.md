@@ -27,21 +27,26 @@ sudo nmap -sV < ip-адрес >
 
 ![image](https://github.com/denniskostyuk/netprotection/blob/main/task-11.png)
 
-sudo nmap -sA 192.168.0.182
-Suricata = нет логов
-Fail2Ban = нет логов
+sudo nmap -sA 192.168.0.182  
+Fail2Ban = нет логов  
+Suricata = нет логов  
 
 sudo nmap -sT 192.168.0.182
-Suricata = task-12
-Fail2Ban = нет логов
+Fail2Ban = нет логов  
+Suricata сигнализирует о потенциально опасном траффике:  
+![image](https://github.com/denniskostyuk/netprotection/blob/main/task-12.png)  
 
-sudo nmap -sS 192.168.0.182
-Suricata = task-13
-Fail2Ban = нет логов
+sudo nmap -sS 192.168.0.182  
+Fail2Ban = нет логов  
+Suricata сигнализирует о потенциально опасном траффике:  
+![image](https://github.com/denniskostyuk/netprotection/blob/main/task-13.png)  
 
-sudo nmap -sV 192.168.0.182
-Suricata = task-14
-Fail2Ban = нет логов
+sudo nmap -sV 192.168.0.182  
+Fail2Ban = нет логов  
+Suricata сигнализирует о потенциально опасном траффике:  
+![image](https://github.com/denniskostyuk/netprotection/blob/main/task-14.png)  
+
+
 
 ## Задание 2
 Проведите атаку на подбор пароля для службы SSH:  
@@ -60,3 +65,10 @@ hydra -L users.txt -P pass.txt < ip-адрес > ssh
 Дополнительная информация по Fail2Ban:https://putty.org.ru/articles/fail2ban-ssh.html.  
 
 В качестве ответа пришлите события, которые попали в логи Suricata и Fail2Ban, прокомментируйте результат.  
+
+### Ответ 2
+
+![image](https://github.com/denniskostyuk/netprotection/blob/main/task-21.png)   
+![image](https://github.com/denniskostyuk/netprotection/blob/main/task-22.png)   
+![image](https://github.com/denniskostyuk/netprotection/blob/main/task-23.png)   
+![image](https://github.com/denniskostyuk/netprotection/blob/main/task-24.png)   
