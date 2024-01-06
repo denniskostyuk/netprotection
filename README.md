@@ -19,6 +19,30 @@ sudo nmap -sV < ip-адрес >
 
 В качестве ответа пришлите события, которые попали в логи Suricata и Fail2Ban, прокомментируйте результат.  
 
+### Ответ 1
+
+На входе имеем 2 хоста:  
+- атакующий Kali Linux = 192.168.0.147  
+- Debian = 192.168.0.182  
+
+![image](https://github.com/denniskostyuk/netprotection/blob/main/task-11.png)
+
+sudo nmap -sA 192.168.0.182
+Suricata = нет логов
+Fail2Ban = нет логов
+
+sudo nmap -sT 192.168.0.182
+Suricata = task-12
+Fail2Ban = нет логов
+
+sudo nmap -sS 192.168.0.182
+Suricata = task-13
+Fail2Ban = нет логов
+
+sudo nmap -sV 192.168.0.182
+Suricata = task-14
+Fail2Ban = нет логов
+
 ## Задание 2
 Проведите атаку на подбор пароля для службы SSH:  
 
