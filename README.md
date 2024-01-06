@@ -68,7 +68,17 @@ hydra -L users.txt -P pass.txt < ip-адрес > ssh
 
 ### Ответ 2
 
+#### Fail2Ban включен:  
+
+hydra не может подобрать пароль:  
 ![image](https://github.com/denniskostyuk/netprotection/blob/main/task-21.png)   
+
+Лог Fail2Ban = в какой-то момент (полсе нескольких безуспешных попыток) IP атакующего хоста блокируется:  
 ![image](https://github.com/denniskostyuk/netprotection/blob/main/task-22.png)   
+Лог Suricata фиксирует попытки подключения по SSH:  
 ![image](https://github.com/denniskostyuk/netprotection/blob/main/task-23.png)   
+
+#### Fail2Ban выключен:  
+
+hydra благополучно подбирает пароль:  
 ![image](https://github.com/denniskostyuk/netprotection/blob/main/task-24.png)   
