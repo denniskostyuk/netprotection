@@ -75,6 +75,7 @@ hydra не может подобрать пароль:
 
 Лог Fail2Ban = в какой-то момент (полсе нескольких безуспешных попыток) IP атакующего хоста блокируется:  
 ![image](https://github.com/denniskostyuk/netprotection/blob/main/task-22.png)   
+
 Лог Suricata фиксирует попытки подключения по SSH:  
 ![image](https://github.com/denniskostyuk/netprotection/blob/main/task-23.png)   
 
